@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"   xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Zip</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Street</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr th:each="order : ${orders}" >
+                <td th:text="${order.deliveryName}"></td>
+                <td th:text="${order.deliveryStreet}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
