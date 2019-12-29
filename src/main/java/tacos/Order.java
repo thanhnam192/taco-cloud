@@ -24,11 +24,11 @@ public class Order implements Serializable {
     private Date placedAt;
 
     //end::allButDetailProperties[]
-//    @NotBlank(message="Delivery name is required")
-//    private String deliveryName;
-//
-//    @NotBlank(message="Street is required")
-//    private String deliveryStreet;
+    @NotBlank(message="Delivery name is required")
+    private String deliveryName;
+
+    @NotBlank(message="Street is required")
+    private String deliveryStreet;
 
     @NotBlank(message="City is required")
     private String deliveryCity;
